@@ -43,7 +43,7 @@ class Hello(Plugin):
                 return
             e_context["context"].type = ContextType.TEXT
             msg: ChatMessage = e_context["context"]["msg"]
-            e_context["context"].content = f'欢迎新用户"{msg.actual_user_nickname}"加入群聊，介绍自己是中科数源公司基于OpenAI和自建知识库搭建的AI营养师，提供基于基因的精准健康管理和抗衰服务，如果您有任何需求，请随时向我咨询。让我们一起向健康迈进！。'
+            e_context["context"].content = f'欢迎新用户"{msg.actual_user_nickname}"加入群聊，我是中科数源公司基于OpenAI和自建知识库搭建的AI营养师，提供基于基因的精准健康管理和抗衰服务，如果您有任何需求，请随时向我咨询。让我们一起向健康迈进！。'
             e_context.action = EventAction.BREAK  # 事件结束，进入默认处理逻辑
             return
 
